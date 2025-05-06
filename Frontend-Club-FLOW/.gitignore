@@ -1,0 +1,13 @@
+# Ignore dependencies and build
+node_modules/
+.next/
+dist/
+build/
+.cache/
+
+# Ignore env and config
+.env
+.env.local
+
+# Ignore logs
+*.log

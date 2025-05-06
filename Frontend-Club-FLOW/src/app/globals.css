@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+}
+.app_transition {
+  @apply transition-all duration-300 ease-in-out;
+}

@@ -1,0 +1,375 @@
+import { Member } from "@/types/Member";
+import { Event } from "@/types/Event";
+import { Guide } from "@/types/Guide";
+import { WorkshopRequest } from "@/types/WorkshopRequest";
+
+export const guides: Guide[] = [
+  {
+    _id: "1",
+    title: "Formation RUST",
+    description: "Guide de formation sur RUST",
+    club: "CME",
+    link: "https://trello.com/c/Qi3ko3vk/9-gestion-des-guides",
+  },
+  {
+    _id: "2",
+    title: "Guide de Prospection",
+    description:
+      "Guide complet pour les membres du pôle Projet et Prospection.",
+    club: "MELKART",
+    link: "https://trello.com/c/Qi3ko3vk/9-gestion-des-guides",
+  },
+  {
+    _id: "3",
+    title: "Marketing",
+    description:
+      "Guide de stratégie marketing pour les membres du pôle Marketing.",
+    club: "MELKART",
+    link: "https://trello.com/c/Qi3ko3vk/9-gestion-des-guides",
+  },
+  {
+    _id: "4",
+    title: "Formation tarbiyet 7alaZoun",
+    description: "Guide pour améliorer les techniques de vente des membres.",
+    club: "MICROSOFT",
+    link: "https://trello.com/c/Qi3ko3vk/9-gestion-des-guides",
+  },
+];
+
+export const user: Member = {
+  _id: "1",
+  firstName: "John",
+  lastName: "Doe",
+  email: "john.doe@example.com",
+  phoneNumber: "+216 22 222 222",
+  address: "Tunis, Tunisia",
+  link: "https://linkedin.com/in/johndoe",
+  club: "IEEE",
+  role: "Président",
+  birthDate: "1990-03-15",
+  image: "https://randomuser.me/api/portraits/men/1.jpg",
+};
+
+export const eventsList: Event[] = [
+  {
+    _id: "1",
+    title: "Formation sur la Prospection",
+    description:
+      "Session de formation dédiée aux membres du club MELKART pour améliorer leurs compétences en prospection.",
+    type: "Formation",
+    club: "MELKART",
+    date: "2024-01-15",
+    time: "09:30",
+    location: "Salle S2",
+  },
+  {
+    _id: "2",
+    title: "Formation Arduino",
+    description:
+      "Un atelier interactif pour renforcer les compétences en négociation des membres du club CME.",
+    type: "Formation",
+    club: "CME",
+    date: "2024-02-20",
+    time: "10:00",
+    location: "Salle 31 ",
+  },
+  {
+    _id: "3",
+    title: "TechX meet",
+    description:
+      "Réunion pour discuter des stratégies de campagne et des objectifs du TechX",
+    type: "Réunion",
+    club: "IEEE",
+    date: "2024-03-05",
+    time: "14:00",
+    location: "Salle 31",
+  },
+  {
+    _id: "4",
+    title: "Assemblée Générale Annuelle",
+    description:
+      "Rencontre annuelle obligatoire pour tous les membres afin de discuter des réalisations de l'année et des objectifs futurs.",
+    type: "Assemblée Générale",
+    date: "2024-03-20",
+    time: "16:00",
+    location: "Amphithéâtre ULT",
+  },
+  {
+    _id: "5",
+    title: "Formation RUST",
+    description:
+      "Réunion mensuelle pour tous les membres afin de passer en revue les activités en cours et les défis rencontrés.",
+    type: "Réunion Générale",
+    club: "CME",
+    date: "2024-04-10",
+    time: "10:30",
+    location: "Salle S2",
+  },
+  {
+    _id: "6",
+    title: "Team Building en Plein Air",
+    description:
+      "Une journée de team building pour renforcer la cohésion entre les membres de tous les clubs.",
+    type: "Team Building",
+    date: "2024-05-15",
+    time: "08:00",
+    location: "Parc National de Boukornine",
+  },
+  {
+    _id: "7",
+    title: "Atelier de Création de Contenu",
+    description:
+      "Un atelier pour développer des compétences en création de contenu digital pour les membres du club MELKART.",
+    type: "Workshop",
+    club: "MELKART",
+    date: "2024-06-01",
+    time: "13:30",
+    location: "Salle 4C",
+  },
+  {
+    _id: "8",
+    title: "Formation tout terrain",
+    description:
+      "Formation tout terrain pour les membres",
+    type: "Formation",
+    date: "2024-07-10",
+    time: "15:00",
+    location: "Salle 31",
+  },
+  {
+    _id: "9",
+    title: "Formation Azur",
+    description:
+      "Une formation destinée au club Micrsoft ",
+    type: "Formation",
+    club: "MICROSOFT",
+    date: "2024-08-05",
+    time: "11:00",
+    location: "Salle 4C",
+  },
+  {
+    _id: "10",
+    title: "Activités de Renforcement d'Équipe",
+    description:
+      "Activités ludiques pour améliorer la collaboration entre les membres de tous les clubs.",
+    type: "Team Building",
+    date: "2024-09-01",
+    time: "09:00",
+    location: "Plage de Hammamet",
+  },
+];
+
+
+export const membersList: Member[] = [
+  {
+    _id: "1",
+    firstName: "John",
+    lastName: "Doe",
+    email: "john.doe@example.com",
+    phoneNumber: "+216 22 222 222",
+    address: "Tunis, Tunisia",
+    link: "https://linkedin.com/in/johndoe",
+    club: "IEEE",
+    role: "Président",
+    birthDate: "1990-03-15",
+    image: "https://randomuser.me/api/portraits/men/1.jpg",
+  },
+  {
+    _id: "2",
+    firstName: "Jane",
+    lastName: "Doe",
+    email: "jane.doe@gmail.com",
+    phoneNumber: "+216 22 333 333",
+    address: "Sousse, Tunisia",
+    link: "https://linkedin.com/in/janedoe",
+    club: "CME",
+    role: "Secrétaire Général",
+    birthDate: "1995-06-25",
+    image: "https://randomuser.me/api/portraits/women/1.jpg",
+  },
+  {
+    _id: "3",
+    firstName: "Alice",
+    lastName: "Dupont",
+    email: "alice.dupont@example.com",
+    phoneNumber: "+216 22 444 444",
+    address: "Monastir, Tunisia",
+    link: "https://linkedin.com/in/alicedupont",
+    club: "Microsoft",
+    role: "Membre",
+    birthDate: "1998-01-12",
+    image: "https://randomuser.me/api/portraits/women/2.jpg",
+  },
+  {
+    _id: "4",
+    firstName: "Hassan",
+    lastName: "El Khoury",
+    email: "hassan.elkhoury@domain.com",
+    phoneNumber: "+216 22 555 555",
+    address: "Carthage, Tunisia",
+    link: "https://linkedin.com/in/hassanelkhoury",
+    club: "Mlekart",
+    role: "Trésorier",
+    birthDate: "1985-05-10",
+    image: "https://randomuser.me/api/portraits/men/2.jpg",
+  },
+  {
+    _id: "5",
+    firstName: "Samira",
+    lastName: "Ben Slimane",
+    email: "samira.slimane@gmail.com",
+    phoneNumber: "+216 22 666 666",
+    address: "La Marsa, Tunisia",
+    link: "https://linkedin.com/in/samirabenslimane",
+    club: "IEEE",
+    role: "Vice-Président",
+    birthDate: "1992-09-18",
+    image: "https://randomuser.me/api/portraits/women/3.jpg",
+  },
+  {
+    _id: "6",
+    firstName: "Karim",
+    lastName: "Bouazizi",
+    email: "karim.bouazizi@company.com",
+    phoneNumber: "+216 22 777 777",
+    address: "Gabes, Tunisia",
+    link: "https://linkedin.com/in/karimbouazizi",
+    club: "CME",
+    role: "Trésorier",
+    birthDate: "1983-07-30",
+    image: "https://randomuser.me/api/portraits/men/3.jpg",
+  },
+  {
+    _id: "7",
+    firstName: "Leila",
+    lastName: "Trabelsi",
+    email: "leila.trabelsi@domain.com",
+    phoneNumber: "+216 22 888 888",
+    address: "Bizerte, Tunisia",
+    link: "https://linkedin.com/in/leilatrabelsi",
+    club: "Mlekart",
+    role: "Président",
+    birthDate: "1993-04-22",
+    image: "https://randomuser.me/api/portraits/women/4.jpg",
+  },
+  {
+    _id: "8",
+    firstName: "Ahmed",
+    lastName: "Jaziri",
+    email: "ahmed.jaziri@example.com",
+    phoneNumber: "+216 22 999 999",
+    address: "Sfax, Tunisia",
+    link: "https://linkedin.com/in/ahmedjaziri",
+    club: "Microsoft",
+    role: "Membre",
+    birthDate: "1987-12-05",
+    image: "https://randomuser.me/api/portraits/men/4.jpg",
+  },
+  {
+    _id: "9",
+    firstName: "Fatma",
+    lastName: "Kallel",
+    email: "fatma.kallel@domain.com",
+    phoneNumber: "+216 22 111 111",
+    address: "Ariana, Tunisia",
+    link: "https://linkedin.com/in/fatmakallel",
+    club: "CME",
+    role: "Vice-Président",
+    birthDate: "1996-08-14",
+    image: "https://randomuser.me/api/portraits/women/5.jpg",
+  },
+  {
+    _id: "10",
+    firstName: "Omar",
+    lastName: "Belaid",
+    email: "omar.belaid@example.com",
+    phoneNumber: "+216 22 123 456",
+    address: "Kairouan, Tunisia",
+    link: "https://linkedin.com/in/omarbelaid",
+    club: "IEEE",
+    role: "Membre",
+    birthDate: "1987-12-05",
+    image: "https://randomuser.me/api/portraits/men/5.jpg",
+  },
+];
+
+
+export const workshopRequests: WorkshopRequest[] = [
+  {
+    _id: "wr_001",
+    title: "Introduction to Project Management",
+    member: "John Doe",
+    reason: "To improve my project management skills for upcoming assignments.",
+    _updatedAt: "2024-01-10",
+  },
+  {
+    _id: "wr_002",
+    title: "Advanced React Workshop",
+    member: "Jane Smith",
+    reason:
+      "To enhance my React knowledge for developing better front-end applications.",
+    _updatedAt: "2024-02-05",
+  },
+  {
+    _id: "wr_003",
+    title: "Data Analysis with Python",
+    member: "Michael Brown",
+    reason:
+      "To learn data analysis techniques for handling client data more efficiently.",
+    _updatedAt: "2024-03-20",
+  },
+  {
+    _id: "wr_004",
+    title: "Effective Team Communication",
+    member: "Emily Davis",
+    reason: "To improve communication skills for better team collaboration.",
+    _updatedAt: "2024-04-15",
+  },
+  {
+    _id: "wr_005",
+    title: "Introduction to Marketing Strategies",
+    member: "Chris Wilson",
+    reason:
+      "To gain a foundational understanding of marketing strategies for my role.",
+    _updatedAt: "2024-05-10",
+  },
+  {
+    _id: "wr_006",
+    title: "Cloud Computing Basics",
+    member: "Sophia Taylor",
+    reason:
+      "To understand cloud computing for future IT infrastructure projects.",
+    _updatedAt: "2024-06-25",
+  },
+  {
+    _id: "wr_007",
+    title: "Leadership Development",
+    member: "Liam Anderson",
+    reason:
+      "To improve leadership qualities for managing team tasks more effectively.",
+    _updatedAt: "2024-07-30",
+  },
+  {
+    _id: "wr_008",
+    title: "Introduction to Financial Modeling",
+    member: "Olivia Martinez",
+    reason:
+      "To gain financial modeling skills for budget planning and client reporting.",
+    _updatedAt: "2024-08-20",
+  },
+  {
+    _id: "wr_009",
+    title: "Effective Presentation Skills",
+    member: "Noah Hernandez",
+    reason:
+      "To deliver impactful presentations during client meetings and pitches.",
+    _updatedAt: "2024-09-10",
+  },
+  {
+    _id: "wr_010",
+    title: "Time Management Techniques",
+    member: "Ava Gonzalez",
+    reason: "To improve productivity and meet deadlines effectively.",
+    _updatedAt: "2024-10-05",
+  },
+];
